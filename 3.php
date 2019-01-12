@@ -9,17 +9,18 @@ function hollowSquare($rows)
           
         // Print stars for each solid rows 
         if ($i == 1 || $i == $rows || $i==$rows*0.5+0.5) 
-            for ($j = 1; $j <= $rows; $j++) 
-                echo "*"; 
+            for ($j = 1; $j <= $rows; $j++)
+                echo "&nbsp*&nbsp"; 
+
   
         // stars for hollow rows 
         else
             for ($j = 1; $j <= $rows; $j++) 
                 if ($j == 1 || $j == $rows || $j==$rows*0.5+0.5) 
-                    echo "*";
+                    echo "&nbsp*";
 
                 else
-                    echo "&nbsp&nbsp"; 
+                    echo "&nbsp&nbsp&nbsp&nbsp"; 
   
         // Move to the next line/row 
         echo "<br>"; 
@@ -35,7 +36,7 @@ function printPattern($rows)
 } 
   
     // Driver code 
-    $rows = 9; 
+    $rows = 15; 
     printPattern ($rows); 
   
 // This code is contributed by mits  
