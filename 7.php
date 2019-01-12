@@ -25,9 +25,9 @@ $result = $db->query($query);
 
             <thead class="thead-dark">
             <tr>
-                <td scope="col">id</td>
-                <td scope="col">category_name</td>
-                <td scope="col">products</td>
+                <td scope="col">person_id</td>
+                <td scope="col">name</td>
+                <td scope="col">hobbies</td>
             </tr>
             </thead>
             <?php while($row = $result->fetchArray()) {?>
