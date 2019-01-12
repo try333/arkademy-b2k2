@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+</html>
 <script>
+
 var bio = {
 	"name" : "Tri Hariadi Purnomo",
 	"address" : "Jalan Cendana",
@@ -14,5 +24,7 @@ var bio = {
 		{"name" : "Sleep", "score" : 5},
 	]
 };
-console.log(bio);
+
+var x=JSON.stringify(bio);
+document.getElementById("demo").innerHTML = x;
 </script>
